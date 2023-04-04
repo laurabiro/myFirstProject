@@ -1,0 +1,114 @@
+body {
+
+    background-color: black;
+    display: flex;
+}
+
+.main-page {
+
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 5px;
+    max-height: 800px;
+    margin: auto;
+}
+
+#image {
+
+    background-color: rgb(52, 52, 166);
+    background-image: linear-gradient(rgb(52, 52, 166), rgb(213, 212, 230))
+    height: 720px;
+    width: 720px;
+    line-height: 700px;
+    text-align: center;
+    color: white;
+    font-size: medium;
+
+}
+
+#text {
+
+    background-color: beige;
+    height: 720px;
+    width: 720px;
+    line-height: 220px;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+   
+    
+
+}
+
+#p1 {
+
+    align-items: flex-start;
+    letter-spacing: 2px;
+
+}
+
+#p2 {
+    align-items: end;
+    letter-spacing: 5px;
+}
+
+
+
+.text span:nth-child(1) {
+
+    color:dodgerblue;
+    font-family: Londrina Shadow;
+    font-size: 90px;
+    letter-spacing: 10px;
+}
+.text span:nth-child(2) {
+
+    color:black;
+    font-family: Londrina Shadow;
+    font-size: 90px;
+    letter-spacing: 10px;
+}
+.text span:nth-child(3) {
+
+    color:rgb(183, 7, 54);
+    font-family: Londrina Shadow;
+    font-size: 90px;
+    letter-spacing: 10px;
+}
+.text span:nth-child(4) {
+
+    color:black;
+    font-family: Londrina Shadow;
+    font-size: 90px;
+    letter-spacing: 10px;
+}
+.text span:nth-child(5) {
+
+    color:rgb(116, 204, 104);
+    font-family: Londrina Shadow;
+    font-size: 90px;
+    letter-spacing: 10px;
+}
+.text span:nth-child(6) {
+
+    color:black;
+    font-family: Londrina Shadow;
+    font-size: 90px;
+    letter-spacing: 10px;
+}
+.text span:nth-child(7) {
+
+    color:darkorange;
+    font-family: Londrina Shadow;
+    font-size: 90px;
+    letter-spacing: 10px;
+}
+.text span:nth-child(8) {
+
+    color:black;
+    font-family: Londrina Shadow;
+    font-size: 90px;
+    letter-spacing: 10px;
+}
