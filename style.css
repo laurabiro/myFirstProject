@@ -42,19 +42,27 @@ body {
 .all-container {
 
     box-sizing: border-box;
+
     background-color: black;
     margin: 5px;
 
 }
 
 
+
+
+/* PAGE 1 */
 .main-page {
 
     max-height: 800px;
+
     display: flex;
     flex-wrap: wrap;
     
 }
+
+
+
 
 
 #image {
@@ -62,14 +70,15 @@ body {
     background-color: rgb(52, 52, 166);
     background-image: linear-gradient(rgb(52, 52, 166), rgb(213, 212, 230));
     height: 720px;
-    flex: 1 0 300px;
     line-height: 710px;
     text-align: center;
-    color: white;
+    color: beige;
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 5px;
+
+    flex: 1 0 300px;
 
 }
 
@@ -77,12 +86,13 @@ body {
 
     background-color: beige;
     height: 720px;
-    flex: 1 0 300px;
     line-height: 230px;
     text-align: center;
     margin: auto;
     padding: 0;
     margin-right: 5px;
+
+    flex: 1 0 300px;
 
 }
 
@@ -102,77 +112,83 @@ body {
     color: black;
 }
 
-.converse {
-    font-weight: bolder;
-}
-
-
-.text span:nth-child(1) {
+.converse span:first-child {
 
     color:dodgerblue;
     font-family: Londrina Shadow;
     font-size: 90px;
     letter-spacing: 10px;
+    font-weight: bold;
 }
-.text span:nth-child(2) {
+.converse span:nth-child(2) {
 
     color:black;
     font-family: Londrina Shadow;
     font-size: 90px;
     letter-spacing: 10px;
+    font-weight: bold;
 }
-.text span:nth-child(3) {
+.converse span:nth-child(3) {
 
     color:crimson;
     font-family: Londrina Shadow;
     font-size: 90px;
     letter-spacing: 10px;
+    font-weight: bold;
 }
-.text span:nth-child(4) {
+.converse span:nth-child(4) {
 
     color:black;
     font-family: Londrina Shadow;
     font-size: 90px;
     letter-spacing: 10px;
+    font-weight: bold;
 }
-.text span:nth-child(5) {
+.converse span:nth-child(5) {
 
     color:green;
     font-family: Londrina Shadow;
     font-size: 90px;
     letter-spacing: 10px;
+    font-weight: bold;
 }
-.text span:nth-child(6) {
+.converse span:nth-child(6) {
 
     color:black;
     font-family: Londrina Shadow;
     font-size: 90px;
     letter-spacing: 10px;
+    font-weight: bold;
 }
-.text span:nth-child(7) {
+.converse span:nth-child(7) {
 
     color:darkorange;
     font-family: Londrina Shadow;
     font-size: 90px;
     letter-spacing: 10px;
+    font-weight: bold;
 }
-.text span:nth-child(8) {
+.converse span:nth-child(8) {
 
     color:black;
     font-family: Londrina Shadow;
     font-size: 90px;
     letter-spacing: 10px;
+    font-weight: bold;
 }
 
 
 
+
+/* PAGE 2 */
 .second-page {
-    
     
     padding: auto;
     width: 100%;
     
 }
+
+
 
 
 
@@ -182,23 +198,34 @@ body {
     color: black;
     height: 300px;
     font-family:Arial, Helvetica, sans-serif;
-
     letter-spacing: 0.1px;
-    flex-basis: 100%;
     margin: 0 5px 5px 5px;
-    padding: 100px 450px 100px 350px;
+    padding: 80px 200px 50px 260px;
 
+    flex-basis: 100%;
+    
 }
 
 
-.about h2 {
+#h1 {
 
   font-weight: bold;
+  font-size: 20px;
+  text-align: left;
 
+}
+
+#p3 {
+
+    font-size: 18px;
+    padding-top: 0;
+    text-align: left;
 }
 
 
 
+
+/* PAGE 3 */
 .third-page {
 
     position: relative;
@@ -208,45 +235,50 @@ body {
 }
 
 
+
+
 .typography {
 
     background-color: beige;
     color: black;
     height: 600px;
-    flex-basis: 100%;
     margin: 0 5px 5px 5px;
     padding: 10px 50px 0 50px;
-    
-    
-    
 
+    flex-basis: 100%;
+    
 }
 
-.typography p {
+
+#font-headings {
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    text-align: center;
-    
-    
-    
+    text-align: center;  
 
 }
 
-.typography h1 {
+#font-for {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;  
+
+}
+
+#londrina {
 
     font-family: Londrina Shadow;
     font-size: 120px;
     letter-spacing: 10px;
+    font-weight: bolder;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 0;
-    font-weight: bolder;
-    
-
+      
 }
 
-.typography h2 {
+#arial {
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 60px;
@@ -258,16 +290,24 @@ body {
 #first-line {
 
     text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
     padding-top: 50px;
+    padding-left: 10px;
     
 }
 
 
 
+
+
+/* PAGE 4 */
 .fourth-page {
 
     flex-basis: 100%;
     flex-wrap: wrap;
+
     margin: 0 5px 5px 5px;
     height: 500px;
     background-color: beige;
@@ -278,14 +318,22 @@ body {
 }
 
 
-h1 {
+
+
+
+#colours {
 
     padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
 }
+
 
 .colour-line {
 
     flex-basis: 100%;
+
     background-color: black;
     height: 210px;
 
@@ -294,70 +342,81 @@ h1 {
 
 }
 
+
 #black {
+
+    flex-basis: 100%;
 
     background-color: black;
     height: 200px;
-    flex-basis: 100%;
     margin: 5px 5px 5px 0;
      
 }
 #dodgerblue {
 
+    flex-basis: 100%;
+
     background-color: dodgerblue;
     height: 200px;
-    flex-basis: 100%;
     margin: 5px 5px 5px 0;
     
 }
 
 #green {
 
+    flex-basis: 100%;
+
     background-color: green;
     height: 200px;
-    flex-basis: 100%;
     margin: 5px 5px 5px 0;
 
 }
 
 #darkorange {
 
+    flex-basis: 100%;
+
     background-color: darkorange;
     height: 200px;
-    flex-basis: 100%;
     margin: 5px 5px 5px 0;
 
 }
 
 #crimson {
 
+    flex-basis: 100%;
+
     background-color: crimson;
     height: 200px;
-    flex-basis: 100%;
     margin: 5px 5px 5px 0;
 }
 
 #beige {
 
+    flex-basis: 100%;
+
     background-color: beige;
     height: 200px;
-    flex-basis: 100%;
     margin: 5px 0 5px 0;
 }
+
 
 .text-line {
 
     display: flex;
-    text-align: center;
     flex-direction: row;
 
+    text-align: center;
+    
 }
 
 .text-line div {
 
     height: 100px;
+
     flex-basis: 100%;
 }
+
 
 #colour1 {
 
@@ -368,47 +427,61 @@ h1 {
 }
 #colour3 {
     color: darkorange;
-
 }
 #colour4 {
     color: crimson;
 }
 #colour5 {
     color: beige;
-    text-shadow: black 1px 0 0.5px, black 0 -1px 0.5px, black 0 1px 0.5px, black -1px 0 0.5px;
-   
-    
+    text-shadow: black 1px 0 0.5px, black 0 -1px 0.5px, black 0 1px 0.5px, black -1px 0 0.5px;   
 }
 
 
+
+
+
+/* PAGE 5 */
 .fifth-page {
 
     flex-basis: 100%;
     flex-wrap: wrap;
+
     margin: 0 5px 0 5px;
     background-color: beige;
     
 }
 
+
+
+
+
 .title {
     
-    hight: 150px;
+    height: 150px;
 }
 
-.fifth-page p {
 
-    padding: 30px;
+#desktop {
+
+    padding: 50px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: 20px;
-    font-weight: bold;
+    text-align: left;
+    letter-spacing: 1px;
+
 }
 
 
+
+
+
+/* PAGE 6 */
 .sixth-page {
 
     flex-basis: 100%;
     flex-wrap: wrap;
+
     margin: 0 5px 5px 5px;
     background-color: beige;
     min-height: fit-content;
@@ -416,8 +489,12 @@ h1 {
     display: flex;
     justify-content: center;
     
-
 }
+
+
+
+
+
 .inside-page {
 
     background-color: black;
@@ -427,7 +504,6 @@ h1 {
 
     display: flex;
     
-
 }
 
 .inside-main-page {
@@ -436,8 +512,8 @@ h1 {
  
 }
 
+
 #top-line {
-    
     
     height: 60px;
     width: 1000px;
@@ -461,12 +537,11 @@ h1 {
 
 }
 
+
 i.material-icons {
 
     font-size: 40px;
-
 }
-
 
 
 #white-gap {
@@ -474,7 +549,6 @@ i.material-icons {
     width: 1px;
     background-color: beige;
     height: 50px;
-
     align-self: center;
 
 }
@@ -501,6 +575,11 @@ i.material-icons {
 
     color: beige;
     background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #log {
@@ -509,5 +588,98 @@ i.material-icons {
 
     color: beige;
     background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.second-line {
+
+    height: 500px;
+    width: 1000px;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+#image2 {
+
+    background-color: rgb(52, 52, 166);
+    background-image: linear-gradient(rgb(52, 52, 166), rgb(213, 212, 230));
+    height: 495px;
+    width: 495px;
+    line-height: 480px;
+    text-align: center;
+    color: white;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 5px 0 5px 5px;
+
+}
+
+#text2 {
+
+    background-color: dodgerblue;
+    color: beige;
+    height: 495px;
+    width: 495px;
+    margin: 5px;
+    position: relative;
+
+}
+
+#left-align {
+    text-align: left;
+    padding: 40px 2px 20px 2px;
+    font-family: Londrina Shadow;
+    font-weight: bold;
+    font-size: 80px;
+
+}
+
+#right-align {
+    text-align: right;
+    padding: 0 5px 0 0;
+    font-family: Londrina Shadow;
+    font-weight: bold;
+    font-size: 80px;
+
+}
+
+#speech {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: light;
+}
+
+#button-shop {
+
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: beige;
+    border-color: black;
+    border-style: dashed;
+    border-width: 5px;
+    color: dodgerblue;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: black 5px 5px 0;
+    
+    font-size: 40px;
+    padding: 5px;
+
+}
+
+
+
+
+/* PAGE 7 */
