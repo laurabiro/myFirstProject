@@ -1,30 +1,75 @@
+/* --- Reset --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100vh;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+/* --- Reset --- */
+
+/* --- Variables --- */
+:root {
+    --bg-img-layer: -10;
+    --nav-layer: 10;
+    
+}
+/* --- Variables --- */
+
+
 body {
 
-    background-color: black;
-    display: flex;
+    background-color: red;
+    
 }
+
+
+.all-container {
+
+    box-sizing: border-box;
+    background-color: black;
+    margin: 5px;
+
+}
+
 
 .main-page {
 
-    
+    max-height: 800px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    column-gap: 5px;
-    max-height: 800px;
-    margin: auto;
+    
 }
+
 
 #image {
 
     background-color: rgb(52, 52, 166);
-    background-image: linear-gradient(rgb(52, 52, 166), rgb(213, 212, 230))
+    background-image: linear-gradient(rgb(52, 52, 166), rgb(213, 212, 230));
     height: 720px;
-    width: 720px;
-    line-height: 700px;
+    flex: 1 0 300px;
+    line-height: 710px;
     text-align: center;
     color: white;
     font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 5px;
 
 }
 
@@ -32,13 +77,12 @@ body {
 
     background-color: beige;
     height: 720px;
-    width: 720px;
-    line-height: 220px;
+    flex: 1 0 300px;
+    line-height: 230px;
     text-align: center;
     margin: auto;
     padding: 0;
-   
-    
+    margin-right: 5px;
 
 }
 
@@ -46,14 +90,21 @@ body {
 
     align-items: flex-start;
     letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
 
 }
 
 #p2 {
     align-items: end;
     letter-spacing: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 
+.converse {
+    font-weight: bolder;
+}
 
 
 .text span:nth-child(1) {
@@ -72,7 +123,7 @@ body {
 }
 .text span:nth-child(3) {
 
-    color:rgb(183, 7, 54);
+    color:crimson;
     font-family: Londrina Shadow;
     font-size: 90px;
     letter-spacing: 10px;
@@ -86,7 +137,7 @@ body {
 }
 .text span:nth-child(5) {
 
-    color:rgb(116, 204, 104);
+    color:green;
     font-family: Londrina Shadow;
     font-size: 90px;
     letter-spacing: 10px;
@@ -112,3 +163,351 @@ body {
     font-size: 90px;
     letter-spacing: 10px;
 }
+
+
+
+.second-page {
+    
+    
+    padding: auto;
+    width: 100%;
+    
+}
+
+
+
+.about {
+
+    background-color: beige;
+    color: black;
+    height: 300px;
+    font-family:Arial, Helvetica, sans-serif;
+
+    letter-spacing: 0.1px;
+    flex-basis: 100%;
+    margin: 0 5px 5px 5px;
+    padding: 100px 450px 100px 350px;
+
+}
+
+
+.about h2 {
+
+  font-weight: bold;
+
+}
+
+
+
+.third-page {
+
+    position: relative;
+    padding: auto;
+    width: 100%;
+
+}
+
+
+.typography {
+
+    background-color: beige;
+    color: black;
+    height: 600px;
+    flex-basis: 100%;
+    margin: 0 5px 5px 5px;
+    padding: 10px 50px 0 50px;
+    
+    
+    
+
+}
+
+.typography p {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    
+    
+    
+
+}
+
+.typography h1 {
+
+    font-family: Londrina Shadow;
+    font-size: 120px;
+    letter-spacing: 10px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 0;
+    font-weight: bolder;
+    
+
+}
+
+.typography h2 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+#first-line {
+
+    text-align: left;
+    padding-top: 50px;
+    
+}
+
+
+
+.fourth-page {
+
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    margin: 0 5px 5px 5px;
+    height: 500px;
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 30px;
+
+}
+
+
+h1 {
+
+    padding: 50px;
+}
+
+.colour-line {
+
+    flex-basis: 100%;
+    background-color: black;
+    height: 210px;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+#black {
+
+    background-color: black;
+    height: 200px;
+    flex-basis: 100%;
+    margin: 5px 5px 5px 0;
+     
+}
+#dodgerblue {
+
+    background-color: dodgerblue;
+    height: 200px;
+    flex-basis: 100%;
+    margin: 5px 5px 5px 0;
+    
+}
+
+#green {
+
+    background-color: green;
+    height: 200px;
+    flex-basis: 100%;
+    margin: 5px 5px 5px 0;
+
+}
+
+#darkorange {
+
+    background-color: darkorange;
+    height: 200px;
+    flex-basis: 100%;
+    margin: 5px 5px 5px 0;
+
+}
+
+#crimson {
+
+    background-color: crimson;
+    height: 200px;
+    flex-basis: 100%;
+    margin: 5px 5px 5px 0;
+}
+
+#beige {
+
+    background-color: beige;
+    height: 200px;
+    flex-basis: 100%;
+    margin: 5px 0 5px 0;
+}
+
+.text-line {
+
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+
+}
+
+.text-line div {
+
+    height: 100px;
+    flex-basis: 100%;
+}
+
+#colour1 {
+
+    color: dodgerblue;
+}
+#colour2 {
+    color: green;
+}
+#colour3 {
+    color: darkorange;
+
+}
+#colour4 {
+    color: crimson;
+}
+#colour5 {
+    color: beige;
+    text-shadow: black 1px 0 0.5px, black 0 -1px 0.5px, black 0 1px 0.5px, black -1px 0 0.5px;
+   
+    
+}
+
+
+.fifth-page {
+
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    margin: 0 5px 0 5px;
+    background-color: beige;
+    
+}
+
+.title {
+    
+    hight: 150px;
+}
+
+.fifth-page p {
+
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.sixth-page {
+
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    margin: 0 5px 5px 5px;
+    background-color: beige;
+    min-height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    
+
+}
+.inside-page {
+
+    background-color: black;
+    min-height: fit-content;
+    width: 1000px;
+    margin: 5px 5px 0 5px;
+
+    display: flex;
+    
+
+}
+
+.inside-main-page {
+
+    flex-basis: 100%;
+ 
+}
+
+#top-line {
+    
+    
+    height: 60px;
+    width: 1000px;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+#menu {
+
+    width: 100px;
+    height: 60px;
+    color: beige;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+i.material-icons {
+
+    font-size: 40px;
+
+}
+
+
+
+#white-gap {
+
+    width: 1px;
+    background-color: beige;
+    height: 50px;
+
+    align-self: center;
+
+}
+
+#converse2 {
+
+    color: beige;
+    background-color: black;
+    font-size: 30px;
+    font-family: Londrina Shadow;
+    letter-spacing: 5px;
+    font-weight: bold;
+
+    width: 600px;
+    text-align: right;
+    padding: 15px 80px 0 20px;
+    line-height: 29px;
+
+}
+
+#search {
+
+    width: 100px;
+
+    color: beige;
+    background-color: black;
+}
+
+#log {
+
+    width: 200px;
+
+    color: beige;
+    background-color: black;
+}
+
