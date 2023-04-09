@@ -102,6 +102,7 @@ body {
     letter-spacing: 2px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    font-size: 18px;
 
 }
 
@@ -110,6 +111,7 @@ body {
     letter-spacing: 5px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    font-size: 18px;
 }
 
 .converse span:first-child {
@@ -482,7 +484,7 @@ body {
     flex-basis: 100%;
     flex-wrap: wrap;
 
-    margin: 0 5px 5px 5px;
+    margin: 0 5px 0 5px;
     background-color: beige;
     min-height: fit-content;
 
@@ -617,7 +619,7 @@ i.material-icons {
     width: 495px;
     line-height: 480px;
     text-align: center;
-    color: white;
+    color: beige;
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
@@ -952,7 +954,7 @@ i.material-icons {
     width: 495px;
     line-height: 480px;
     text-align: center;
-    color: white;
+    color: beige;
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
@@ -1074,6 +1076,218 @@ i.material-icons {
     padding-right: 20px;
    
 }
+
+.sixth-line {
+
+    height: 500px;
+    width: 1000px;
+
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+#image4 {
+
+    background-color: darkorange;
+    background-image: linear-gradient(darkorange, beige);
+    height: 495px;
+    width: 495px;
+    line-height: 480px;
+    text-align: center;
+    color: beige;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 5px 0 0 5px;
+
+}
+
+#text4 {
+
+    background-color: darkorange;
+    height: 495px;
+    width: 495px;
+    margin: 5px;
+    position: relative;
+   
+
+}
+
+#top-line3 {
+
+    margin-top: 80px;
+    font-family: Londrina Shadow;
+    font-weight: bold;
+    font-size: 80px;
+    color: beige;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#text4 div {
+
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    text-align: left;
+    padding: 15px 0 0 50px;
+    box-shadow: black 0 3px 0;
+
+}
+
+#send {
+
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: beige;
+    border-color: black;
+    border-style: dashed;
+    border-width: 5px;
+    color: darkorange;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: black 5px 5px 0;
+    
+    font-size: 40px;
+    padding: 5px;
+
+}
+
+.seventh-line {
+
+    height: 400px;
+    width: 990px;
+    background-color: beige;
+    margin: 5px 5px 0 5px;
+    text-align: center;
+    
+}
+
+#top-line4 {
+
+    color: black;
+    font-family: Londrina Shadow;
+    font-size: 80px;
+    font-weight: bold;
+    padding: 100px 0 0 0;
+
+}
+
+#news {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+
+}
+
+#sign-up {
+
+    width: 200px;
+    height: 50px;
+    background-color: beige;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: black 5px 5px 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 60px;
+
+}
+
+.eighth-line {
+
+    height: 200px;
+    background-color: green;
+    margin: 5px;
+    color: black;
+
+}
+
+#converse3 {
+
+    font-family: Londrina Shadow;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px 0 10px 20px;
+    text-shadow: beige 3px 3px 0;
+    letter-spacing: 2px;
+
+}
+
+#a-c {
+
+    background-color: green;
+    border: transparent;
+    box-shadow: black 0 3px 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: beige;
+    margin: 10px 15px 0 20px; 
+
+}
+
+#g-h {
+
+    background-color: green;
+    border: transparent;
+    box-shadow: black 0 3px 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: beige;
+    margin: 10px 15px 0 20px; 
+
+}
+
+#input {
+
+    background-color: beige;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 10px 15px 0 130px; 
+    width: 300px;
+    height: 50px;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: black 5px 5px 0;
+    text-align: center;
+    
+}
+
+.inside-page2 {
+
+    background-color: beige;
+    height: 150px;
+    margin: 0 5px 0 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
