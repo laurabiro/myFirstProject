@@ -67,8 +67,8 @@ body {
 
 #image {
 
-    background-color: rgb(52, 52, 166);
-    background-image: linear-gradient(rgb(52, 52, 166), rgb(213, 212, 230));
+    background-color: darkslateblue;
+    background-image: linear-gradient(darkslateblue, beige);
     height: 720px;
     line-height: 710px;
     text-align: center;
@@ -114,7 +114,7 @@ body {
 
 .converse span:first-child {
 
-    color:dodgerblue;
+    color: darkslateblue;
     font-family: Londrina Shadow;
     font-size: 90px;
     letter-spacing: 10px;
@@ -352,11 +352,11 @@ body {
     margin: 5px 5px 5px 0;
      
 }
-#dodgerblue {
+#darkslateblue {
 
     flex-basis: 100%;
 
-    background-color: dodgerblue;
+    background-color:darkslateblue;
     height: 200px;
     margin: 5px 5px 5px 0;
     
@@ -420,7 +420,7 @@ body {
 
 #colour1 {
 
-    color: dodgerblue;
+    color: darkslateblue;
 }
 #colour2 {
     color: green;
@@ -595,6 +595,8 @@ i.material-icons {
     justify-content: center;
 }
 
+
+
 .second-line {
 
     height: 500px;
@@ -605,10 +607,12 @@ i.material-icons {
 
 }
 
+
+
 #image2 {
 
-    background-color: rgb(52, 52, 166);
-    background-image: linear-gradient(rgb(52, 52, 166), rgb(213, 212, 230));
+    background-color: darkslateblue;
+    background-image: linear-gradient(darkslateblue, beige);
     height: 495px;
     width: 495px;
     line-height: 480px;
@@ -623,7 +627,7 @@ i.material-icons {
 
 #text2 {
 
-    background-color: dodgerblue;
+    background-color: darkslateblue;
     color: beige;
     height: 495px;
     width: 495px;
@@ -633,6 +637,7 @@ i.material-icons {
 }
 
 #left-align {
+
     text-align: left;
     padding: 40px 2px 20px 2px;
     font-family: Londrina Shadow;
@@ -642,6 +647,7 @@ i.material-icons {
 }
 
 #right-align {
+
     text-align: right;
     padding: 0 5px 0 0;
     font-family: Londrina Shadow;
@@ -670,7 +676,7 @@ i.material-icons {
     border-color: black;
     border-style: dashed;
     border-width: 5px;
-    color: dodgerblue;
+    color: darkslateblue;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: black 5px 5px 0;
     
@@ -679,7 +685,403 @@ i.material-icons {
 
 }
 
+.third-line {
+
+    height: 600px;
+    width: 990px;
+    background-color: beige;
+    margin: 5px 5px 0 5px;
+    
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#shop-color {
+
+    justify-content: left;
+    padding: 50px 0 0 20px;
+    font-family: Londrina Shadow;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 70px;
+
+    flex-basis: 100%;
+    align-self: center;
+}
+
+#blue-s {
+    color: darkslateblue;
+}
+#green-h {
+    color: green;
+}
+#yellow-o {
+    color: darkorange;
+}
+#red-p {
+    color: crimson;
+}
+#shoes {
+    color: black;
+}
+
+#button-line {
+
+    flex-basis: 100%;
+    display: flex;
+
+    padding-left: 20px;
+    padding-right: 25px;
+
+}
+
+
+.inside-text {
+    
+    display: flex;
+    align-items: flex-end;
+    padding-left: 5px;
+}
+
+#high {
+
+    height: 250px;
+    background-color: beige;
+    border-color: crimson;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: crimson 5px 5px 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+
+    flex-basis: 100%;
+    text-align: left;
+
+    display: block;
+    
+}
+
+#high::first-letter {
+    color: crimson;
+    font-size: 20px;
+}
+
+#low {
+
+    height: 250px;
+    background-color: beige;
+    border-color: darkorange;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: darkorange 5px 5px 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+
+    flex-basis: 100%;
+    text-align: left;
+
+    display: block;
+
+}
+
+#low::first-letter {
+    color:darkorange;
+    font-size: 20px;
+}
+
+#platform {
+
+    height: 250px;
+    background-color: beige;
+    border-color: green;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: green 5px 5px 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+   
+    flex-basis: 100%;
+    text-align: left;
+    display: block;
+
+}
+
+#platform::first-letter {
+    color:green;
+    font-size: 20px;
+}
+
+#winter {
+
+    height: 250px;
+    background-color: beige;
+    border-color: darkslateblue;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: darkslateblue 5px 5px 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+
+    flex-basis: 100%;
+    text-align: left;
+    display: block;
+    
+}
+
+#winter::first-letter {
+    color:darkslateblue;
+    font-size: 20px;
+}
+
+/* THE TEXT IS NOT GOING TO THE BOTTOM! */
+
+
+#shop-container {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+#shop-all{
+    
+    width: 200px;
+    height: 50px;
+    background-color: beige;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: black 5px 5px 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+
+.shop-all::first-letter {
+    color: crimson;
+}
+
+.fourth-line {
+
+    height: 500px;
+    width: 1000px;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+#text3 {
+
+    background-color: crimson;
+    color: beige;
+    height: 495px;
+    width: 495px;
+    margin: 5px;
+    position: relative;
+
+}
+
+#left-align2 {
+
+    text-align: left;
+    padding: 40px 0 20px 2px;
+    font-family: Londrina Shadow;
+    font-weight: bold;
+    font-size: 80px;
+
+}
+
+#right-align2 {
+
+    text-align: right;
+    padding: 0 5px 0 0;
+    font-family: Londrina Shadow;
+    font-weight: bold;
+    font-size: 80px;
+
+}
+
+#p-line {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: light;
+
+}
+
+#shop-button {
+
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: beige;
+    border-color: black;
+    border-style: dashed;
+    border-width: 5px;
+    color: crimson;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: black 5px 5px 0;
+    
+    font-size: 40px;
+    padding: 5px;
+
+}
+
+#image3 {
+
+    background-color: crimson;
+    background-image: linear-gradient(darkorange, crimson);
+    height: 495px;
+    width: 495px;
+    line-height: 480px;
+    text-align: center;
+    color: white;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 5px 5px 0 0;
+
+}
+
+.fifth-line {
+
+    height: 600px;
+    width: 990px;
+    background-color: beige;
+    margin: 5px 5px 0 5px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#top-line2 {
+
+    color: black;
+    font-family: Londrina Shadow;
+    font-size: 80px;
+    font-weight: bold;
+    padding: 50px 0 0 0;
+    
+    flex-basis: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+    
+}
+
+#quote, #clean, #deliver, #gift {
+
+    height: 70px;
+    width: 750px;
+    background-color: beige;
+    border-width: 3px;
+    border-style: solid;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0;
 
 
 
-/* PAGE 7 */
+}
+
+#quote {
+
+    border-color: darkslateblue;
+    box-shadow: darkslateblue 5px 5px 0;
+    
+
+}
+#clean {
+
+    border-color: green;
+    box-shadow: green 5px 5px 0;
+
+}
+#deliver {
+
+    border-color: darkorange;
+    box-shadow: darkorange 5px 5px 0;
+
+}
+#gift {
+
+    border-color: crimson;
+    box-shadow: crimson 5px 5px 0;
+    margin-bottom: 50px;
+
+}
+
+
+.plus {
+
+    text-align: right;
+    padding-right: 5px;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    
+}
+
+
+
+
+#quote span:last-child {
+
+    float: right;
+    padding-right: 20px;
+   
+}
+#clean span:last-child {
+
+    float: right;
+    padding-right: 20px;
+}
+#deliver span:last-child {
+
+    float: right;
+    padding-right: 20px;
+   
+}
+#gift span:last-child {
+
+    float: right;
+    padding-right: 20px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
