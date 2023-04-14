@@ -743,7 +743,7 @@ i.material-icons {
     
     display: flex;
     align-items: flex-end;
-    padding-left: 5px;
+    padding: 220px 0 0 5px;
 }
 
 #high {
@@ -847,7 +847,7 @@ i.material-icons {
     font-size: 20px;
 }
 
-/* THE TEXT IS NOT GOING TO THE BOTTOM! */
+/* THE TEXT IS NOT GOING TO THE BOTTOM! IT IS GOING? BUT WITH PADDING... */
 
 
 #shop-container {
@@ -1272,9 +1272,9 @@ i.material-icons {
 .inside-page2 {
 
     background-color: beige;
-    height: 150px;
+    height: 200px;
     margin: 0 5px 0 5px;
-
+    
 }
 
 
@@ -1283,19 +1283,516 @@ i.material-icons {
 
 
 
+.seventh-page {
+
+    flex-basis: 100%;
+    flex-wrap: wrap;
+
+    margin: 5px 5px 0 5px;
+    background-color: beige;
+    
+}
 
 
 
 
 
+.title2 {
+    
+    height: 150px;
+}
+
+
+#catalog {
+
+    padding: 50px 0 0 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 1px;
+
+}
+
+
+
+.eighth-page {
+
+    flex-basis: 100%;
+    flex-wrap: wrap;
+   
+
+    margin: 0 5px 5px 5px;
+    background-color: beige;
+    min-height: fit-content;
+    border-bottom: black solid 5px;
+
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.inside-page3 {
+
+    background-color: black;
+    min-height: fit-content;
+    width: 1000px;
+    
+}
+
+.inside-main-page2 {
+
+    flex-basis: 100%;
+    
+}
+
+
+
+#top-line2 {
+    
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    
+}
+
+#menu2 {
+
+    width: 100px;
+    height: 60px;
+    color: beige;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+i.material-icons {
+
+    font-size: 40px;
+}
+
+
+#white-gap2 {
+
+    width: 1px;
+    background-color: beige;
+    height: 50px;
+    align-self: center;
+
+}
+
+#converse4 {
+
+    color: beige;
+    background-color: black;
+    font-size: 30px;
+    font-family: Londrina Shadow;
+    letter-spacing: 5px;
+    font-weight: bold;
+
+    width: 600px;
+    text-align: right;
+    padding: 15px 80px 0 20px;
+    line-height: 29px;
+
+}
+
+#search2 {
+
+    width: 100px;
+
+    color: beige;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#log2 {
+
+    width: 180px;
+
+    color: beige;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.second-line2 {
+
+    background-color: beige;
+    width: 990px;
+    height: 200px;
+    color: crimson;
+    font-family: Londrina Shadow;
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 5px;
+
+    margin: 5px 5px 0 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.third-line2 {
+
+    background-color: black;
+    width: 990px;
+    height: 60px;
+    margin: 5px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#results {
+
+    background-color: beige;
+    color: crimson;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 245px;
+
+    margin-right: 5px;
+
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#space {
+
+    background-color: beige;
+    margin-right: 5px;
+
+    flex: 1;
+
+
+
+}
+
+.sort {
+
+    background-color: beige;
+    border: none;
+    color: crimson;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 245px;
+   
+    
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fourth-line2 {
+
+    height: 800px;
+    width: 990px;
+    margin: 5px 5px 0 5px;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+
+}
+
+.left-column {
+
+    background-color: beige;
+    height: 800px;
+    width: 250px;
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.left-column button {
+
+    width: 250px;
+    height: 60px;
+    background-color: beige;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 5px 5px 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#style-b {
+
+    display: flex;
+
+}
+
+#style-b p {
+    flex-basis: 100%;
+    flex:1;
+    text-align: left;
+}
+
+
+#style-b div {
+    flex-basis: 100%;
+    flex:1;
+} 
+
+#size-b p {
+    flex-basis: 100%;
+    flex:1;
+    text-align: left;
+}
+
+
+#size-b div {
+    flex-basis: 100%;
+    flex:1;
+} 
+
+#colour-b p {
+    flex-basis: 100%;
+    flex:1;
+    text-align: left;
+}
+
+
+#colour-b div {
+    flex-basis: 100%;
+    flex:1;
+} 
+
+.right-column {
+
+    background-color: beige;
+    height: 800px;
+    width: 740px;
+
+}
 
 
 
 
+.button-line2 {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-b {
+
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 0 10px;
+}
+
+.container-b button {
+
+    height: 250px;
+    width: 220px;
+    background-color: beige;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: black 5px 5px 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+    
+
+    text-align: left;
+
+    display: block;
+
+}
+#crimson1, #crimson2, #crimson3 {
+    border-color: crimson;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: crimson 5px 5px 0;
+    padding-top: 220px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+#darkorange1, #darkorange2 {
+    border-color: darkorange;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: darkorange 5px 5px 0;
+    padding-top: 220px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+#green1, #green2 {
+    border-color: green;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: green 5px 5px 0;
+    padding-top: 220px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+#darkslateblue1, #darkslateblue2 {
+    border-color: darkslateblue;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: darkslateblue 5px 5px 0;
+    padding-top: 220px;
+    padding-left: 10px;
+    font-size: 15px;
+}
 
 
+.fifth-line2 {
 
+    height: 250px;
+    width: 990px;
+    background-color: beige;
+    margin-left: 5px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
+}
 
+.fifth-line2 button {
 
+    height: 70px;
+    width: 70px;
+    background-color: beige;
+    color: black;
+    border: solid;
+    border-color: black;
+    border-width: 5px;
+    box-shadow: black 5px 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    
+    
+}
+
+.fifth-line2 :first-child {
+    color: crimson;
+    margin-right: 30px;
+    box-shadow: crimson 5px 5px 0;
+    border-color: crimson;
+    
+}
+
+.fifth-line2 :nth-child(2) {
+    margin-right: 30px;
+}
+.fifth-line2 :nth-child(3) {
+    margin-right: 30px;
+}
+
+.sixth-line2 {
+
+    height: 200px;
+    background-color: crimson;
+    margin: 5px;
+    color: black;
+
+}
+
+#converse5 {
+
+    font-family: Londrina Shadow;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px 0 10px 20px;
+    text-shadow: beige 3px 3px 0;
+    letter-spacing: 2px;
+
+}
+
+#a-c2 {
+
+    background-color: crimson;
+    border: transparent;
+    box-shadow: black 0 3px 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: beige;
+    margin: 10px 15px 0 20px; 
+
+}
+
+#g-h2 {
+
+    background-color: crimson;
+    border: transparent;
+    box-shadow: black 0 3px 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: beige;
+    margin: 10px 15px 0 20px; 
+
+}
+
+#input2 {
+
+    background-color: beige;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    margin: 10px 15px 0 130px; 
+    width: 300px;
+    height: 50px;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: black 5px 5px 0;
+    text-align: center;
+    
+}
+
+.inside-page4 {
+
+    background-color: beige;
+    height: 200px;
+    
+}
