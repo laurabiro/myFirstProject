@@ -34,7 +34,7 @@ img, picture, svg, video {
 
 body {
 
-    background-color: red;
+    background-color: black;
     
 }
 
@@ -46,7 +46,13 @@ body {
     background-color: black;
     margin: 5px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
+
+
 
 
 
@@ -54,48 +60,46 @@ body {
 /* PAGE 1 */
 .main-page {
 
-    max-height: 800px;
+    min-height: 600px;
+    max-height: 100%;
+    min-width: 400px;
+
+    flex-basis: 100%;
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     
 }
 
-
-
-
-
 #image {
 
-    background-color: darkslateblue;
-    background-image: linear-gradient(darkslateblue, beige);
-    height: 720px;
-    line-height: 710px;
-    text-align: center;
-    color: beige;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
+    background-color: darkblue;
+    height: 600px;
     margin: 5px;
 
-    flex: 1 0 300px;
+    flex: 1 0 450px;
 
+}
+#pic {
+    width: 100%;
+    height: 600px;
 }
 
 #text {
 
-    background-color: beige;
-    height: 720px;
-    line-height: 230px;
+    background-color: floralwhite;
+    height: 600px;
     text-align: center;
-    margin: auto;
-    padding: 0;
-    margin-right: 5px;
+    margin: 5px;
 
-    flex: 1 0 300px;
+    flex: 1 0 450px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
 
 }
-
 #p1 {
 
     align-items: flex-start;
@@ -105,7 +109,6 @@ body {
     font-size: 18px;
 
 }
-
 #p2 {
     align-items: end;
     letter-spacing: 5px;
@@ -116,7 +119,7 @@ body {
 
 .converse span:first-child {
 
-    color: darkslateblue;
+    color: darkblue;
     font-family: Londrina Shadow;
     font-size: 90px;
     letter-spacing: 10px;
@@ -182,32 +185,40 @@ body {
 
 
 
+
+
 /* PAGE 2 */
 .second-page {
     
-    padding: auto;
-    width: 100%;
-    
+
+    background-color: floralwhite;
+    color: black;
+    margin: 0 5px 5px 5px;
+    min-height: 300px;
+    max-height: fit-content;
+
+    flex-basis: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
-
-
 
 .about {
 
-    background-color: beige;
-    color: black;
-    height: 300px;
+    min-height: 100px;
+    max-height: fit-content;
+    max-width: 800px;
+    min-width: 300px;
+
+    
     font-family:Arial, Helvetica, sans-serif;
     letter-spacing: 0.1px;
-    margin: 0 5px 5px 5px;
-    padding: 80px 200px 50px 260px;
-
-    flex-basis: 100%;
+    padding: 5px;
     
-}
+    flex: 1;
 
+}
 
 #h1 {
 
@@ -216,7 +227,6 @@ body {
   text-align: left;
 
 }
-
 #p3 {
 
     font-size: 18px;
@@ -227,30 +237,35 @@ body {
 
 
 
+
+
+
 /* PAGE 3 */
 .third-page {
 
-    position: relative;
-    padding: auto;
-    width: 100%;
+    background-color: floralwhite;
+    color: black;
+    max-width: 100%;
+    min-width: 450px;
+    max-height: 600px;
+    margin: 0 5px 5px 5px;
+    
+    flex-basis: 100%;
+
+    display: flex;
+    justify-content: center;
 
 }
-
-
-
 
 .typography {
-
-    background-color: beige;
-    color: black;
-    height: 600px;
-    margin: 0 5px 5px 5px;
-    padding: 10px 50px 0 50px;
-
-    flex-basis: 100%;
     
-}
+    padding: 10px 5px 20px 5px;
+    min-width: 300px;
 
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
 
 #font-headings {
 
@@ -258,13 +273,19 @@ body {
     font-size: 25px;
     text-align: center;  
 
+    display: inline-block; 
+    flex-basis: 100%; 
+
 }
 
 #font-for {
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    text-align: center;  
+    text-align: center;
+
+    display: inline-block; 
+    flex-basis: 100%; 
 
 }
 
@@ -276,8 +297,17 @@ body {
     font-weight: bolder;
     text-align: center;
     padding-top: 50px;
-    padding-bottom: 0;
+
+    display: inline-block;
+    flex-basis: 100%;
+ 
       
+}
+
+@media only screen and (max-width: 600px) {
+    #londrina {
+      font-size: 40px;
+    }
 }
 
 #arial {
@@ -286,6 +316,9 @@ body {
     font-size: 60px;
     text-align: center;
     padding-top: 50px;
+
+    display: inline-block; 
+    flex-basis: 100%; 
     
 }
 
@@ -297,7 +330,10 @@ body {
     letter-spacing: 1px;
     padding-top: 50px;
     padding-left: 10px;
-    
+
+    display: inline-block; 
+    flex-basis: 100%; 
+
 }
 
 
@@ -308,20 +344,20 @@ body {
 .fourth-page {
 
     flex-basis: 100%;
-    flex-wrap: wrap;
-
+   
     margin: 0 5px 5px 5px;
-    height: 500px;
-    background-color: beige;
+    min-height: 500px;
+    max-height: fit-content;
+
+    background-color: floralwhite;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: 30px;
 
+    display: flex;
+    flex-wrap: wrap;
+    
 }
-
-
-
-
 
 #colours {
 
@@ -329,114 +365,152 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     letter-spacing: 1px;
+    margin-bottom: 40px;
+
+    flex-basis: 100%;
 }
 
-
+/* THE LINE IS NOT MAKING IT TO THE END SOMEHOW */
 .colour-line {
 
     flex-basis: 100%;
 
-    background-color: black;
-    height: 210px;
+    height: 300px;
+
+    border-top: black solid 2.5px;
 
     display: flex;
-    flex-direction: row;
 
 }
+@media only screen and (max-width: 800px) {
+    .colour-line {
+      height: fit-content;
+      font-size: 20px;
+      flex: 1;
 
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px;
+      border-top: none;
+    }
+}
+
+.colors {
+  
+    flex-basis: 100%;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+
+}
+.colors :first-child {
+    max-height: 200px;
+    
+    border: black solid 2.5px;
+    width: 100%;
+    flex: 1;
+    
+}
+@media only screen and (max-width: 1250px) {
+    .colors :first-child {
+        flex: 1;
+        max-height: 200px;
+        max-width: 200px;
+        min-width: 60px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .colors :first-child {
+        min-height: 50px;
+        max-width: 700px;
+        flex: 1;
+    }
+}
 
 #black {
 
-    flex-basis: 100%;
-
     background-color: black;
-    height: 200px;
-    margin: 5px 5px 5px 0;
+    border-bottom: black solid 5px;
      
 }
-#darkslateblue {
+#darkblue {
 
-    flex-basis: 100%;
-
-    background-color:darkslateblue;
-    height: 200px;
-    margin: 5px 5px 5px 0;
+    background-color:darkblue;
+    border-bottom: black solid 5px;
     
 }
-
 #green {
 
-    flex-basis: 100%;
-
     background-color: green;
-    height: 200px;
-    margin: 5px 5px 5px 0;
-
+    border-bottom: black solid 5px;
+  
 }
-
 #darkorange {
 
-    flex-basis: 100%;
-
     background-color: darkorange;
-    height: 200px;
-    margin: 5px 5px 5px 0;
+    border-bottom: black solid 5px;
 
 }
-
 #crimson {
 
-    flex-basis: 100%;
-
     background-color: crimson;
-    height: 200px;
-    margin: 5px 5px 5px 0;
+    border-bottom: black solid 5px;
+ 
+}
+#floralwhite {
+
+    background-color: floralwhite;
+    border-bottom: black solid 5px;
+    border-right: black solid 5px;
+  
 }
 
-#beige {
+.colors :nth-child(2) {
 
     flex-basis: 100%;
+    padding-top: 10px;
+    max-height: 50px;
+    flex: 1;
 
-    background-color: beige;
-    height: 200px;
-    margin: 5px 0 5px 0;
+}
+@media only screen and (max-width: 1250px) {
+    .colors :nth-child(2) {
+        flex: 1;
+        max-height: 50px;
+        max-width: 200px;
+        min-width: 60px;
+
+    }
 }
 
-
-.text-line {
-
-    display: flex;
-    flex-direction: row;
-
-    text-align: center;
-    
-}
-
-.text-line div {
-
-    height: 100px;
-
-    flex-basis: 100%;
-}
 
 
 #colour1 {
 
-    color: darkslateblue;
+    color: darkblue;
+
 }
 #colour2 {
     color: green;
+  
 }
 #colour3 {
     color: darkorange;
+ 
 }
 #colour4 {
     color: crimson;
+   
 }
 #colour5 {
-    color: beige;
+    color: floralwhite;
     text-shadow: black 1px 0 0.5px, black 0 -1px 0.5px, black 0 1px 0.5px, black -1px 0 0.5px;   
+
 }
+
+
 
 
 
@@ -449,19 +523,14 @@ body {
     flex-wrap: wrap;
 
     margin: 0 5px 0 5px;
-    background-color: beige;
+    background-color: floralwhite;
     
 }
-
-
-
-
 
 .title {
     
     height: 150px;
 }
-
 
 #desktop {
 
@@ -478,64 +547,88 @@ body {
 
 
 
+
+
 /* PAGE 6 */
 .sixth-page {
 
     flex-basis: 100%;
-    flex-wrap: wrap;
-
     margin: 0 5px 0 5px;
-    background-color: beige;
+    padding-bottom: 200px;
+    background-color: floralwhite;
     min-height: fit-content;
 
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     
 }
-
-
-
-
 
 .inside-page {
 
     background-color: black;
     min-height: fit-content;
-    width: 1000px;
+    max-width: 1000px;
     margin: 5px 5px 0 5px;
 
     display: flex;
+    flex: 1;
     
+}
+@media only screen and (max-width: 1000px) {
+    .inside-page {
+        min-width: 450px;
+    
+    }
 }
 
 .inside-main-page {
 
     flex-basis: 100%;
- 
+
+    display: flex;
+    flex-wrap: wrap;
+
+    flex: 1;
+
+}
+@media only screen and (max-width: 1000px) {
+    .inside-main-page {
+        min-width: 450px;
+    
+    }
 }
 
 
 #top-line {
     
-    height: 60px;
-    width: 1000px;
+    max-width: 1000px;
+    padding: 5px 5px 0 5px;
+
+    flex-basis: 100%;
+
+    flex: 1;
 
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
 }
 
 #menu {
 
-    width: 100px;
-    height: 60px;
-    color: beige;
+    max-width: 100px;
+    max-height: 60px;
+    color: floralwhite;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0 20px 0 20px;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+
+    flex: 1;
 
 }
 
@@ -545,11 +638,10 @@ i.material-icons {
     font-size: 40px;
 }
 
-
 #white-gap {
 
     width: 1px;
-    background-color: beige;
+    background-color: floralwhite;
     height: 50px;
     align-self: center;
 
@@ -557,87 +649,96 @@ i.material-icons {
 
 #converse2 {
 
-    color: beige;
+    color: floralwhite;
     background-color: black;
     font-size: 30px;
     font-family: Londrina Shadow;
     letter-spacing: 5px;
     font-weight: bold;
 
-    width: 600px;
+    max-width: 600px;
     text-align: right;
-    padding: 15px 80px 0 20px;
-    line-height: 29px;
+    padding: 0 20px 0 80px;
 
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    flex: 5;
+    
 }
 
 #search {
 
-    width: 100px;
-
-    color: beige;
+    color: floralwhite;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    flex: 1;
+
 }
 
 #log {
 
-    width: 200px;
-
-    color: beige;
+    color: floralwhite;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    flex: 3;
 }
+
 
 
 
 .second-line {
 
-    height: 500px;
+    min-height: 500px;
+    max-height: fit-content;
     width: 1000px;
 
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+
+    flex-basis: 100%;
 
 }
 
-
-
 #image2 {
 
-    background-color: darkslateblue;
-    background-image: linear-gradient(darkslateblue, beige);
-    height: 495px;
-    width: 495px;
-    line-height: 480px;
-    text-align: center;
-    color: beige;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 5px 0 5px 5px;
+    background-color: floralwhite;
+   
+    max-height: 495px;
+    max-width: fit-content;
+    
+    margin: 5px;
+    border-top: black solid 5px;
+    flex: 1 0 450px;
 
 }
 
 #text2 {
 
-    background-color: darkslateblue;
-    color: beige;
+    background-color: darkblue;
+    color: floralwhite;
     height: 495px;
     width: 495px;
     margin: 5px;
-    position: relative;
+    border-top: black solid 5px;
+    
+    flex: 1 0 450px;
+
+    display: flex;
+    flex-direction: column;
 
 }
-
 #left-align {
 
     text-align: left;
@@ -647,7 +748,6 @@ i.material-icons {
     font-size: 80px;
 
 }
-
 #right-align {
 
     text-align: right;
@@ -657,7 +757,6 @@ i.material-icons {
     font-size: 80px;
 
 }
-
 #speech {
 
     font-family: Arial, Helvetica, sans-serif;
@@ -667,36 +766,43 @@ i.material-icons {
     padding-top: 40px;
     font-weight: light;
 }
-
 #button-shop {
 
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: beige;
+   
+    align-self: center;
+    background-color: floralwhite;
     border-color: black;
     border-style: dashed;
     border-width: 5px;
-    color: darkslateblue;
+    color: darkblue;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: black 5px 5px 0;
     
     font-size: 40px;
     padding: 5px;
+    margin-top: 30px;
 
 }
 
+
+
 .third-line {
 
-    height: 600px;
-    width: 990px;
-    background-color: beige;
-    margin: 5px 5px 0 5px;
+    min-height: 600px;
+    max-height: fit-content;
+    max-width: 990px;
+    min-width: 400px;
+    background-color: floralwhite;
+    margin: 0 5px 0 5px;
+
+    flex-basis: 100%;
     
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
+    flex: 1;
+ 
 }
 
 #shop-color {
@@ -710,10 +816,11 @@ i.material-icons {
 
     flex-basis: 100%;
     align-self: center;
+
 }
 
 #blue-s {
-    color: darkslateblue;
+    color: darkblue;
 }
 #green-h {
     color: green;
@@ -737,19 +844,36 @@ i.material-icons {
     padding-right: 25px;
 
 }
+@media only screen and (max-width: 1000px) {
+    #button-line {
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex: 1;
+        max-width: 400px;
+        min-width: 300px;
+        min-height: 200px;
+        max-height: fit-content;
+        padding-bottom: 20px;
+        
+    }
+}
 
 
 .inside-text {
     
     display: flex;
-    align-items: flex-end;
-    padding: 220px 0 0 5px;
+    flex: 1;
+    flex-basis: 100%;
+    padding: 0 0 0 5px;
+
 }
 
 #high {
 
-    height: 250px;
-    background-color: beige;
+    height: fit-content;
+    background-color: floralwhite;
     border-color: crimson;
     border-width: 3px;
     border-style: solid;
@@ -763,19 +887,19 @@ i.material-icons {
     flex-basis: 100%;
     text-align: left;
 
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
-
-#high::first-letter {
+#high :nth-child(2):first-letter {
     color: crimson;
     font-size: 20px;
 }
 
 #low {
-
-    height: 250px;
-    background-color: beige;
+    height: fit-content;
+    background-color: floralwhite;
     border-color: darkorange;
     border-width: 3px;
     border-style: solid;
@@ -789,19 +913,20 @@ i.material-icons {
     flex-basis: 100%;
     text-align: left;
 
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
-
-#low::first-letter {
+#low :nth-child(2):first-letter {
     color:darkorange;
     font-size: 20px;
 }
 
 #platform {
 
-    height: 250px;
-    background-color: beige;
+    height: fit-content;
+    background-color: floralwhite;
     border-color: green;
     border-width: 3px;
     border-style: solid;
@@ -812,42 +937,39 @@ i.material-icons {
     font-weight: bold;
     margin-right: 10px;
    
-    flex-basis: 100%;
-    text-align: left;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
-
-#platform::first-letter {
+#platform :nth-child(2):first-letter {
     color:green;
     font-size: 20px;
 }
 
 #winter {
 
-    height: 250px;
-    background-color: beige;
-    border-color: darkslateblue;
+    height: fit-content;
+    background-color: floralwhite;
+    border-color: darkblue;
     border-width: 3px;
     border-style: solid;
-    box-shadow: darkslateblue 5px 5px 0;
+    box-shadow: darkblue 5px 5px 0;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: bold;
+    margin-right: 10px;
 
-    flex-basis: 100%;
-    text-align: left;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
-
-#winter::first-letter {
-    color:darkslateblue;
+#winter :nth-child(2):first-letter {
+    color:darkblue;
     font-size: 20px;
 }
-
-/* THE TEXT IS NOT GOING TO THE BOTTOM! IT IS GOING? BUT WITH PADDING... */
 
 
 #shop-container {
@@ -859,7 +981,7 @@ i.material-icons {
     
     width: 200px;
     height: 50px;
-    background-color: beige;
+    background-color: floralwhite;
     border-color: black;
     border-width: 3px;
     border-style: solid;
@@ -868,31 +990,42 @@ i.material-icons {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 20px;
    
 }
-
 .shop-all::first-letter {
     color: crimson;
 }
 
+
+
+
 .fourth-line {
 
-    height: 500px;
+    min-height: 500px;
+    max-height: fit-content;
     width: 1000px;
 
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+
+    flex-basis: 100%;
 
 }
 
 #text3 {
 
     background-color: crimson;
-    color: beige;
+    color: floralwhite;
     height: 495px;
     width: 495px;
     margin: 5px;
-    position: relative;
+    border-top: black solid 5px;
+
+    flex: 1 0 450px;
+
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -905,7 +1038,6 @@ i.material-icons {
     font-size: 80px;
 
 }
-
 #right-align2 {
 
     text-align: right;
@@ -915,7 +1047,6 @@ i.material-icons {
     font-size: 80px;
 
 }
-
 #p-line {
 
     font-family: Arial, Helvetica, sans-serif;
@@ -923,17 +1054,14 @@ i.material-icons {
     letter-spacing: 2px;
     text-align: center;
     padding-top: 10px;
+    padding-bottom: 20px;
     font-weight: light;
 
 }
-
 #shop-button {
-
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: beige;
+    
+    align-self: center;
+    background-color: floralwhite;
     border-color: black;
     border-style: dashed;
     border-width: 5px;
@@ -943,30 +1071,35 @@ i.material-icons {
     
     font-size: 40px;
     padding: 5px;
+    margin-bottom: 20px;
 
 }
 
 #image3 {
 
     background-color: crimson;
-    background-image: linear-gradient(darkorange, crimson);
-    height: 495px;
-    width: 495px;
-    line-height: 480px;
-    text-align: center;
-    color: beige;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 5px 5px 0 0;
+ 
+    max-height: 495px;
+    max-width: fit-content;
+    
+    margin: 5px;
+    border-top: black solid 5px;
+    flex: 1 0 450px;
+
+    display: flex;
+    align-items: center;
 
 }
 
+
+
 .fifth-line {
 
-    height: 600px;
-    width: 990px;
-    background-color: beige;
+    min-height: 600px;
+    max-height: fit-content;
+    max-width: 990px;
+    min-width: 500px;
+    background-color: floralwhite;
     margin: 5px 5px 0 5px;
     
     display: flex;
@@ -976,29 +1109,18 @@ i.material-icons {
 
 }
 
-#top-line2 {
+#top-line6 {
 
     color: black;
     font-family: Londrina Shadow;
     font-size: 80px;
     font-weight: bold;
-    padding: 50px 0 0 0;
-    
-    flex-basis: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-
     
 }
 
 #quote, #clean, #deliver, #gift {
 
-    height: 70px;
-    width: 750px;
-    background-color: beige;
+    background-color: floralwhite;
     border-width: 3px;
     border-style: solid;
     color: black;
@@ -1006,18 +1128,18 @@ i.material-icons {
     font-size: 17px;
     font-weight: bold;
     letter-spacing: 1px;
-    padding: 0;
+    padding: 20px 40px 20px 40px;
+    margin: 0 100px 0 100px;
 
-
+    flex-basis: 100%;
 
 }
 
 #quote {
 
-    border-color: darkslateblue;
-    box-shadow: darkslateblue 5px 5px 0;
+    border-color: darkblue;
+    box-shadow: darkblue 5px 5px 0;
     
-
 }
 #clean {
 
@@ -1051,8 +1173,6 @@ i.material-icons {
 }
 
 
-
-
 #quote span:last-child {
 
     float: right;
@@ -1077,41 +1197,55 @@ i.material-icons {
    
 }
 
+
+
 .sixth-line {
 
-    height: 500px;
+    min-height: 500px;
+    max-height: fit-content;
     width: 1000px;
 
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 
+    flex-basis: 100%;
 
 }
 
 #image4 {
 
     background-color: darkorange;
-    background-image: linear-gradient(darkorange, beige);
-    height: 495px;
-    width: 495px;
-    line-height: 480px;
-    text-align: center;
-    color: beige;
-    font-size: medium;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 5px 0 0 5px;
+
+    height: 500px;
+    width: fit-content;
+    
+    margin: 0 5px 0 5px;
+    border-top: black solid 5px;
+    flex: 1 0 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
+#pic4 {
+
+    max-height: 490px;
+    min-width: 495px;
+}
+
 
 #text4 {
 
     background-color: darkorange;
-    height: 495px;
+    min-height: 495px;
     width: 495px;
-    margin: 5px;
-    position: relative;
-   
+    margin: 5px 5px 0 5px;
+
+    flex: 1 0 450px;
+
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -1121,7 +1255,7 @@ i.material-icons {
     font-family: Londrina Shadow;
     font-weight: bold;
     font-size: 80px;
-    color: beige;
+    color: floralwhite;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -1142,11 +1276,8 @@ i.material-icons {
 
 #send {
 
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: beige;
+    align-self: center;
+    background-color: floralwhite;
     border-color: black;
     border-style: dashed;
     border-width: 5px;
@@ -1156,17 +1287,25 @@ i.material-icons {
     
     font-size: 40px;
     padding: 5px;
+    margin-top: 40px;
 
 }
 
+
+
+
 .seventh-line {
 
-    height: 400px;
     width: 990px;
-    background-color: beige;
+    background-color: floralwhite;
     margin: 5px 5px 0 5px;
     text-align: center;
+    flex-basis: 100%;
     
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 #top-line4 {
@@ -1175,7 +1314,8 @@ i.material-icons {
     font-family: Londrina Shadow;
     font-size: 80px;
     font-weight: bold;
-    padding: 100px 0 0 0;
+    padding: 50px 0 0 0;
+    flex-basis: 100%;
 
 }
 
@@ -1186,14 +1326,14 @@ i.material-icons {
     font-weight: bold;
     letter-spacing: 1px;
     color: black;
+    flex-basis: 100%;
+    padding-bottom: 30px;
 
 }
 
 #sign-up {
-
-    width: 200px;
-    height: 50px;
-    background-color: beige;
+   
+    background-color: floralwhite;
     border-color: black;
     border-width: 3px;
     border-style: solid;
@@ -1202,16 +1342,25 @@ i.material-icons {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: bold;
-    margin-top: 60px;
+    margin: 30px 0 30px 0;
+    padding: 10px 30px 10px 30px;
 
 }
 
+
 .eighth-line {
 
-    height: 200px;
     background-color: green;
     margin: 5px;
+    padding-bottom: 50px;
     color: black;
+
+    flex-basis: 100%;
+    flex: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
 
 }
 
@@ -1221,8 +1370,10 @@ i.material-icons {
     font-size: 40px;
     font-weight: bold;
     padding: 20px 0 10px 20px;
-    text-shadow: beige 3px 3px 0;
+    text-shadow: floralwhite 3px 3px 0;
     letter-spacing: 2px;
+
+    flex-basis: 100%;
 
 }
 
@@ -1234,8 +1385,8 @@ i.material-icons {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: beige;
-    margin: 10px 15px 0 20px; 
+    color: floralwhite;
+    margin: 0 15px 10px 20px; 
 
 }
 
@@ -1247,20 +1398,19 @@ i.material-icons {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: beige;
-    margin: 10px 15px 0 20px; 
-
+    color: floralwhite;
+    margin: 0 15px 10px 50px; 
+    
 }
 
 #input {
 
-    background-color: beige;
+    background-color: floralwhite;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    margin: 10px 15px 0 130px; 
-    width: 300px;
-    height: 50px;
+    margin: 10px 0 0 150px; 
+    padding: 10px 30px 10px 30px;
     border-color: black;
     border-width: 3px;
     border-style: solid;
@@ -1269,13 +1419,9 @@ i.material-icons {
     
 }
 
-.inside-page2 {
 
-    background-color: beige;
-    height: 200px;
-    margin: 0 5px 0 5px;
-    
-}
+
+
 
 
 
@@ -1289,23 +1435,18 @@ i.material-icons {
     flex-wrap: wrap;
 
     margin: 5px 5px 0 5px;
-    background-color: beige;
+    background-color: floralwhite;
     
 }
 
-
-
-
-
-.title2 {
+.title {
     
     height: 150px;
 }
 
-
 #catalog {
 
-    padding: 50px 0 0 50px;
+    padding: 50px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     font-size: 20px;
@@ -1316,20 +1457,21 @@ i.material-icons {
 
 
 
+
+
+
+/* PAGE 8 */
 .eighth-page {
 
     flex-basis: 100%;
-    flex-wrap: wrap;
-   
-
-    margin: 0 5px 5px 5px;
-    background-color: beige;
+    margin: 0 5px 0 5px;
+    padding-bottom: 50px;
+    background-color: floralwhite;
     min-height: fit-content;
-    border-bottom: black solid 5px;
 
     display: flex;
     justify-content: center;
-    
+    flex-wrap: wrap;
     
 }
 
@@ -1337,37 +1479,41 @@ i.material-icons {
 
     background-color: black;
     min-height: fit-content;
-    width: 1000px;
-    
-}
-
-.inside-main-page2 {
-
+    max-width: 1000px;
+    margin: 5px 5px 0 5px;
     flex-basis: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
     
 }
-
 
 
 #top-line2 {
     
+    padding: 5px 5px 0 5px;
+
+    flex-basis: 100%;
+    flex:1;
+
     display: flex;
-    justify-content: center;
-    padding: 0;
-    
+    justify-content: space-between;
+
 }
 
 #menu2 {
 
-    width: 100px;
-    height: 60px;
-    color: beige;
+    color: floralwhite;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0 20px 0 20px;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+
+    flex: 1;
 
 }
 
@@ -1377,11 +1523,10 @@ i.material-icons {
     font-size: 40px;
 }
 
-
 #white-gap2 {
 
     width: 1px;
-    background-color: beige;
+    background-color: floralwhite;
     height: 50px;
     align-self: center;
 
@@ -1389,39 +1534,42 @@ i.material-icons {
 
 #converse4 {
 
-    color: beige;
+    color: floralwhite;
     background-color: black;
     font-size: 30px;
     font-family: Londrina Shadow;
     letter-spacing: 5px;
     font-weight: bold;
 
-    width: 600px;
     text-align: right;
-    padding: 15px 80px 0 20px;
-    line-height: 29px;
+    padding: 0 20px 0 80px;
 
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    flex: 5;
+    
 }
 
 #search2 {
 
-    width: 100px;
-
-    color: beige;
+    color: floralwhite;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    flex: 1;
 
 }
 
 #log2 {
 
-    width: 180px;
 
-    color: beige;
+    color: floralwhite;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -1429,13 +1577,13 @@ i.material-icons {
     align-items: center;
     justify-content: center;
 
+    flex: 3;
 }
 
 .second-line2 {
 
-    background-color: beige;
-    width: 990px;
-    height: 200px;
+    background-color: floralwhite;
+    max-width: 990px;
     color: crimson;
     font-family: Londrina Shadow;
     font-size: 80px;
@@ -1443,6 +1591,10 @@ i.material-icons {
     letter-spacing: 5px;
 
     margin: 5px 5px 0 5px;
+    padding: 50px 0 50px 0;
+
+    flex-basis: 100%;
+    
 
     display: flex;
     justify-content: center;
@@ -1453,9 +1605,9 @@ i.material-icons {
 .third-line2 {
 
     background-color: black;
-    width: 990px;
-    height: 60px;
+    max-width: 990px;
     margin: 5px;
+    flex-basis: 100%;
 
     display: flex;
     flex-wrap: wrap;
@@ -1464,16 +1616,16 @@ i.material-icons {
 
 #results {
 
-    background-color: beige;
+    background-color: floralwhite;
     color: crimson;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    width: 245px;
+
+    flex:1;
 
     margin-right: 5px;
-
-
+    padding: 5px;
     
     display: flex;
     justify-content: center;
@@ -1483,26 +1635,23 @@ i.material-icons {
 
 #space {
 
-    background-color: beige;
+    background-color: floralwhite;
     margin-right: 5px;
+    padding: 5px;
 
-    flex: 1;
-
-
+    flex: 2;
 
 }
 
 .sort {
 
-    background-color: beige;
+    background-color: floralwhite;
     border: none;
     color: crimson;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    width: 245px;
-   
-    
+    flex: 1;
 
     
     display: flex;
@@ -1513,34 +1662,37 @@ i.material-icons {
 
 .fourth-line2 {
 
-    height: 800px;
-    width: 990px;
-    margin: 5px 5px 0 5px;
-    background-color: black;
+    max-width: 990px;
+    margin: 0 5px 0 5px;
+    background-color: floralwhite;
+
+    flex-basis: 100%;
 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
 
+}
+@media only screen and (max-width: 1000px) {
+    .fourth-line2 {
+        flex-direction: row;
+    }
 }
 
 .left-column {
 
-    background-color: beige;
-    height: 800px;
-    width: 250px;
+    background-color: floralwhite;
+    width: 255px;
     
     display: flex;
     flex-direction: column;
+    flex-basis: 100%;
     
 }
 
 .left-column button {
 
-    width: 250px;
-    height: 60px;
-    background-color: beige;
+    background-color: floralwhite;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -1550,18 +1702,25 @@ i.material-icons {
     border-width: 0 5px 5px 0;
 
     display: flex;
-    flex-direction: row;
     align-items: center;
 
 }
+@media only screen and (max-width: 1000px) {
+    .left-column button {
+        border-style: solid;
+        border-color: black;
+        border-width: 0 0 5px 0;
+    }
+}
+
 
 #style-b {
 
     display: flex;
 
 }
-
 #style-b p {
+
     flex-basis: 100%;
     flex:1;
     text-align: left;
@@ -1572,8 +1731,8 @@ i.material-icons {
     flex-basis: 100%;
     flex:1;
 } 
-
 #size-b p {
+
     flex-basis: 100%;
     flex:1;
     text-align: left;
@@ -1584,7 +1743,6 @@ i.material-icons {
     flex-basis: 100%;
     flex:1;
 } 
-
 #colour-b p {
     flex-basis: 100%;
     flex:1;
@@ -1597,109 +1755,112 @@ i.material-icons {
     flex:1;
 } 
 
+
+
+
+
 .right-column {
 
-    background-color: beige;
-    height: 800px;
-    width: 740px;
-
-}
-
-
-
-
-.button-line2 {
+    background-color: floralwhite;
+    padding-bottom: 50px;
 
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
 }
+
 
 .container-b {
 
-    flex-basis: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+
+    max-width: 700px;
+
     margin: 10px 0 0 10px;
+    
+}
+@media only screen and (max-width: 1000px) {
+    .container-b {
+        align-items: center;
+    }
 }
 
 .container-b button {
 
-    height: 250px;
-    width: 220px;
-    background-color: beige;
-    border-color: black;
-    border-width: 3px;
-    border-style: solid;
+    background: floralwhite;
+    border-color: black solid 3px;
     box-shadow: black 5px 5px 0;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: bold;
     margin-right: 10px;
-    
-
     text-align: left;
 
-    display: block;
+}
+@media only screen and (max-width: 1000px) {
+    .text-size {
+        font-size: 10px;
+    }
+}
+
+
+#cc1, #cc2, #cc3 {
+    border: crimson solid 3px;
+    box-shadow: crimson 5px 5px 0;
+    padding: 5px;
+    font-size: 15px;
+
 
 }
-#crimson1, #crimson2, #crimson3 {
-    border-color: crimson;
-    border-width: 3px;
-    border-style: solid;
-    box-shadow: crimson 5px 5px 0;
-    padding-top: 220px;
-    padding-left: 10px;
-    font-size: 15px;
-}
-#darkorange1, #darkorange2 {
-    border-color: darkorange;
-    border-width: 3px;
-    border-style: solid;
+#doc1, #doc2 {
+    border: darkorange solid 3px;
     box-shadow: darkorange 5px 5px 0;
-    padding-top: 220px;
-    padding-left: 10px;
+    padding: 5px;
     font-size: 15px;
+
+    
 }
-#green1, #green2 {
-    border-color: green;
-    border-width: 3px;
-    border-style: solid;
+#gc1, #gc2 {
+    border: green solid 3px;
     box-shadow: green 5px 5px 0;
-    padding-top: 220px;
-    padding-left: 10px;
+    padding: 5px;
     font-size: 15px;
+
+
 }
-#darkslateblue1, #darkslateblue2 {
-    border-color: darkslateblue;
-    border-width: 3px;
-    border-style: solid;
-    box-shadow: darkslateblue 5px 5px 0;
-    padding-top: 220px;
-    padding-left: 10px;
+#dc1, #dc2 {
+    border: darkblue solid 3px;
+    box-shadow: darkblue 5px 5px 0;
+    padding: 5px;
     font-size: 15px;
+
 }
+
+
 
 
 .fifth-line2 {
 
-    height: 250px;
-    width: 990px;
-    background-color: beige;
+    background-color: floralwhite;
     margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 30px;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 
-}
+    flex-basis: 100%;
 
+}
 .fifth-line2 button {
 
-    height: 70px;
-    width: 70px;
-    background-color: beige;
+    padding: 20px 30px 20px 30px;
+    background-color: floralwhite;
     color: black;
     border: solid;
     border-color: black;
@@ -1709,9 +1870,7 @@ i.material-icons {
     font-size: 25px;
     font-weight: bold;
     
-    
 }
-
 .fifth-line2 :first-child {
     color: crimson;
     margin-right: 30px;
@@ -1719,7 +1878,6 @@ i.material-icons {
     border-color: crimson;
     
 }
-
 .fifth-line2 :nth-child(2) {
     margin-right: 30px;
 }
@@ -1727,12 +1885,14 @@ i.material-icons {
     margin-right: 30px;
 }
 
+
 .sixth-line2 {
 
     height: 200px;
     background-color: crimson;
     margin: 5px;
     color: black;
+    flex-basis: 100%;
 
 }
 
@@ -1742,7 +1902,7 @@ i.material-icons {
     font-size: 40px;
     font-weight: bold;
     padding: 20px 0 10px 20px;
-    text-shadow: beige 3px 3px 0;
+    text-shadow: floralwhite 3px 3px 0;
     letter-spacing: 2px;
 
 }
@@ -1755,7 +1915,7 @@ i.material-icons {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: beige;
+    color: floralwhite;
     margin: 10px 15px 0 20px; 
 
 }
@@ -1768,14 +1928,14 @@ i.material-icons {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: beige;
+    color: floralwhite;
     margin: 10px 15px 0 20px; 
 
 }
 
 #input2 {
 
-    background-color: beige;
+    background-color: floralwhite;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
@@ -1787,12 +1947,5 @@ i.material-icons {
     border-style: solid;
     box-shadow: black 5px 5px 0;
     text-align: center;
-    
-}
-
-.inside-page4 {
-
-    background-color: beige;
-    height: 200px;
     
 }
