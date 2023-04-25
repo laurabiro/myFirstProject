@@ -35,6 +35,8 @@ img, picture, svg, video {
 body {
 
     background-color: black;
+
+
     
 }
 
@@ -42,15 +44,16 @@ body {
 .all-container {
 
     box-sizing: border-box;
+    
 
     background-color: black;
     margin: 5px;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
 }
+
 
 
 
@@ -60,22 +63,19 @@ body {
 /* PAGE 1 */
 .main-page {
 
-    min-height: 600px;
-    max-height: 100%;
-    min-width: 400px;
-
     flex-basis: 100%;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     
+    
 }
+
 
 #image {
 
     background-color: darkblue;
-    height: 600px;
     margin: 5px;
 
     flex: 1 0 450px;
@@ -83,13 +83,13 @@ body {
 }
 #pic {
     width: 100%;
-    height: 600px;
 }
+
+
 
 #text {
 
     background-color: floralwhite;
-    height: 600px;
     text-align: center;
     margin: 5px;
 
@@ -100,6 +100,7 @@ body {
     justify-content: space-around;
 
 }
+
 #p1 {
 
     align-items: flex-start;
@@ -117,69 +118,61 @@ body {
     font-size: 18px;
 }
 
+.converse {
+    font-family: Londrina Shadow;
+    font-size: 90px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    
+
+}
+@media only screen and (max-width: 1200px) {
+    .converse {
+    
+        letter-spacing: 0;
+        font-size: 70px;
+
+    }
+}
 .converse span:first-child {
 
     color: darkblue;
-    font-family: Londrina Shadow;
-    font-size: 90px;
-    letter-spacing: 10px;
-    font-weight: bold;
+   
 }
 .converse span:nth-child(2) {
 
     color:black;
-    font-family: Londrina Shadow;
-    font-size: 90px;
-    letter-spacing: 10px;
-    font-weight: bold;
+    
 }
 .converse span:nth-child(3) {
 
     color:crimson;
-    font-family: Londrina Shadow;
-    font-size: 90px;
-    letter-spacing: 10px;
-    font-weight: bold;
+    
 }
 .converse span:nth-child(4) {
 
     color:black;
-    font-family: Londrina Shadow;
-    font-size: 90px;
-    letter-spacing: 10px;
-    font-weight: bold;
+   
 }
 .converse span:nth-child(5) {
 
     color:green;
-    font-family: Londrina Shadow;
-    font-size: 90px;
-    letter-spacing: 10px;
-    font-weight: bold;
+    
 }
 .converse span:nth-child(6) {
 
     color:black;
-    font-family: Londrina Shadow;
-    font-size: 90px;
-    letter-spacing: 10px;
-    font-weight: bold;
+    
 }
 .converse span:nth-child(7) {
 
     color:darkorange;
-    font-family: Londrina Shadow;
-    font-size: 90px;
-    letter-spacing: 10px;
-    font-weight: bold;
+  
 }
 .converse span:nth-child(8) {
 
     color:black;
-    font-family: Londrina Shadow;
-    font-size: 90px;
-    letter-spacing: 10px;
-    font-weight: bold;
+    
 }
 
 
@@ -194,8 +187,6 @@ body {
     background-color: floralwhite;
     color: black;
     margin: 0 5px 5px 5px;
-    min-height: 300px;
-    max-height: fit-content;
 
     flex-basis: 100%;
 
@@ -206,18 +197,17 @@ body {
 
 .about {
 
-    min-height: 100px;
-    max-height: fit-content;
-    max-width: 800px;
-    min-width: 300px;
-
     
     font-family:Arial, Helvetica, sans-serif;
     letter-spacing: 0.1px;
     padding: 5px;
+    margin: 50px 400px;
     
-    flex: 1;
-
+}
+@media only screen and (max-width: 1200px) {
+    .about {
+        margin: 10px;
+    }
 }
 
 #h1 {
@@ -245,9 +235,6 @@ body {
 
     background-color: floralwhite;
     color: black;
-    max-width: 100%;
-    min-width: 450px;
-    max-height: 600px;
     margin: 0 5px 5px 5px;
     
     flex-basis: 100%;
@@ -260,7 +247,7 @@ body {
 .typography {
     
     padding: 10px 5px 20px 5px;
-    min-width: 300px;
+    
 
     display: flex;
     flex-wrap: wrap;
@@ -346,8 +333,7 @@ body {
     flex-basis: 100%;
    
     margin: 0 5px 5px 5px;
-    min-height: 500px;
-    max-height: fit-content;
+    
 
     background-color: floralwhite;
     font-family: Arial, Helvetica, sans-serif;
@@ -406,7 +392,6 @@ body {
 
 }
 .colors :first-child {
-    max-height: 200px;
     
     border: black solid 2.5px;
     width: 100%;
@@ -471,7 +456,6 @@ body {
 
     flex-basis: 100%;
     padding-top: 10px;
-    max-height: 50px;
     flex: 1;
 
 }
@@ -520,17 +504,19 @@ body {
 .fifth-page {
 
     flex-basis: 100%;
-    flex-wrap: wrap;
 
     margin: 0 5px 0 5px;
     background-color: floralwhite;
     
 }
-
-.title {
+@media only screen and (max-width: 1000px) {
+    .fifth-page {
+        min-width: 300px;
     
-    height: 150px;
+    }
 }
+
+
 
 #desktop {
 
@@ -556,18 +542,22 @@ body {
     margin: 0 5px 0 5px;
     padding-bottom: 200px;
     background-color: floralwhite;
-    min-height: fit-content;
 
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     
 }
+@media only screen and (max-width: 1000px) {
+    .sixth-page {
+        min-width: 300px;
+    
+    }
+}
 
 .inside-page {
 
     background-color: black;
-    min-height: fit-content;
     max-width: 1000px;
     margin: 5px 5px 0 5px;
 
@@ -577,7 +567,7 @@ body {
 }
 @media only screen and (max-width: 1000px) {
     .inside-page {
-        min-width: 450px;
+        min-width: 300px;
     
     }
 }
@@ -594,7 +584,7 @@ body {
 }
 @media only screen and (max-width: 1000px) {
     .inside-main-page {
-        min-width: 450px;
+        min-width: 300px;
     
     }
 }
@@ -638,7 +628,7 @@ i.material-icons {
     font-size: 40px;
 }
 
-#white-gap {
+.white-gap {
 
     width: 1px;
     background-color: floralwhite;
@@ -700,36 +690,40 @@ i.material-icons {
 
 .second-line {
 
-    min-height: 500px;
-    max-height: fit-content;
-    width: 1000px;
-
     display: flex;
     flex-wrap: wrap;
 
     flex-basis: 100%;
 
 }
+@media only screen and (max-width: 1000px) {
+    .second-line {
+        min-width: 300px;
+    
+    }
+}
 
 #image2 {
 
     background-color: floralwhite;
-   
-    max-height: 495px;
-    max-width: fit-content;
+
     
     margin: 5px;
     border-top: black solid 5px;
     flex: 1 0 450px;
 
 }
+@media only screen and (max-width: 1000px) {
+    #image2 {
+        min-width: 300px;
+    
+    }
+}
 
 #text2 {
 
     background-color: darkblue;
     color: floralwhite;
-    height: 495px;
-    width: 495px;
     margin: 5px;
     border-top: black solid 5px;
     
@@ -738,6 +732,12 @@ i.material-icons {
     display: flex;
     flex-direction: column;
 
+}
+@media only screen and (max-width: 1000px) {
+    #text2 {
+        min-width: 300px;
+    
+    }
 }
 #left-align {
 
@@ -781,6 +781,7 @@ i.material-icons {
     font-size: 40px;
     padding: 5px;
     margin-top: 30px;
+    margin-bottom: 20px;
 
 }
 
@@ -788,10 +789,7 @@ i.material-icons {
 
 .third-line {
 
-    min-height: 600px;
-    max-height: fit-content;
-    max-width: 990px;
-    min-width: 400px;
+  
     background-color: floralwhite;
     margin: 0 5px 0 5px;
 
@@ -973,9 +971,11 @@ i.material-icons {
 
 
 #shop-container {
+
     flex-basis: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 40px;
 }
 #shop-all{
     
@@ -1002,10 +1002,6 @@ i.material-icons {
 
 .fourth-line {
 
-    min-height: 500px;
-    max-height: fit-content;
-    width: 1000px;
-
     display: flex;
     flex-wrap: wrap;
 
@@ -1017,8 +1013,6 @@ i.material-icons {
 
     background-color: crimson;
     color: floralwhite;
-    height: 495px;
-    width: 495px;
     margin: 5px;
     border-top: black solid 5px;
 
@@ -1078,9 +1072,8 @@ i.material-icons {
 #image3 {
 
     background-color: crimson;
+    max-height: 600px;
  
-    max-height: 495px;
-    max-width: fit-content;
     
     margin: 5px;
     border-top: black solid 5px;
@@ -1090,6 +1083,11 @@ i.material-icons {
     align-items: center;
 
 }
+#pic3 {
+    min-height: 100%;
+    width: 100%;
+}
+
 
 
 
@@ -1201,9 +1199,6 @@ i.material-icons {
 
 .sixth-line {
 
-    min-height: 500px;
-    max-height: fit-content;
-    width: 1000px;
 
     display: flex;
     flex-wrap: wrap;
@@ -1215,10 +1210,7 @@ i.material-icons {
 #image4 {
 
     background-color: darkorange;
-
-    height: 500px;
-    width: fit-content;
-    
+    max-height: 600px;
     margin: 0 5px 0 5px;
     border-top: black solid 5px;
     flex: 1 0 450px;
@@ -1229,17 +1221,15 @@ i.material-icons {
 
 }
 #pic4 {
-
-    max-height: 490px;
-    min-width: 495px;
+    max-height: 100%;
+    width: 100%;
 }
+
 
 
 #text4 {
 
     background-color: darkorange;
-    min-height: 495px;
-    width: 495px;
     margin: 5px 5px 0 5px;
 
     flex: 1 0 450px;
@@ -1296,7 +1286,6 @@ i.material-icons {
 
 .seventh-line {
 
-    width: 990px;
     background-color: floralwhite;
     margin: 5px 5px 0 5px;
     text-align: center;
@@ -1439,10 +1428,6 @@ i.material-icons {
     
 }
 
-.title {
-    
-    height: 150px;
-}
 
 #catalog {
 
@@ -1467,7 +1452,6 @@ i.material-icons {
     margin: 0 5px 0 5px;
     padding-bottom: 50px;
     background-color: floralwhite;
-    min-height: fit-content;
 
     display: flex;
     justify-content: center;
@@ -1478,7 +1462,6 @@ i.material-icons {
 .inside-page3 {
 
     background-color: black;
-    min-height: fit-content;
     max-width: 1000px;
     margin: 5px 5px 0 5px;
     flex-basis: 100%;
@@ -1523,11 +1506,11 @@ i.material-icons {
     font-size: 40px;
 }
 
-#white-gap2 {
+.white-gap2 {
 
     width: 1px;
     background-color: floralwhite;
-    height: 50px;
+    min-height: 50px;
     align-self: center;
 
 }
@@ -1888,7 +1871,6 @@ i.material-icons {
 
 .sixth-line2 {
 
-    height: 200px;
     background-color: crimson;
     margin: 5px;
     color: black;
